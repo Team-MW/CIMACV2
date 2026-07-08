@@ -50,7 +50,7 @@ export default function Contact() {
                 allow="geolocation; microphone; camera"
                 src="https://form.jotform.com/261883116403353"
                 frameBorder="0"
-                style={{ minWidth: '100%', height: '700px', border: 'none' }}
+                style={{ minWidth: '100%', height: '900px', border: 'none' }}
                 scrolling="no"
               >
               </iframe>
