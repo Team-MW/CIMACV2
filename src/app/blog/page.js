@@ -9,7 +9,14 @@ export const metadata = {
 export default function BlogIndex() {
   return (
     <>
-      <div className="section" style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '80px 0', textAlign: 'center' }}>
+      <div className="section" style={{ 
+        backgroundImage: 'linear-gradient(rgba(26, 50, 88, 0.8), rgba(26, 50, 88, 0.8)), url("/images/office-1.avif")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: 'white', 
+        padding: '80px 0', 
+        textAlign: 'center' 
+      }}>
         <div className="container animate-fade-in">
           <h1 style={{ fontSize: '3rem', marginBottom: '10px', color: 'white' }}>Blog & Actualités</h1>
           <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)', maxWidth: '600px', margin: '0 auto' }}>

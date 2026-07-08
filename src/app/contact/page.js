@@ -1,7 +1,14 @@
 export default function Contact() {
   return (
     <>
-      <div className="section" style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '80px 0', textAlign: 'center' }}>
+      <div className="section" style={{ 
+        backgroundImage: 'linear-gradient(rgba(26, 50, 88, 0.8), rgba(26, 50, 88, 0.8)), url("/images/cta-bg.webp")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: 'white', 
+        padding: '80px 0', 
+        textAlign: 'center' 
+      }}>
         <div className="container animate-fade-in">
           <h1 style={{ fontSize: '3.5rem', marginBottom: '10px', color: 'white', fontWeight: '700' }}>Contactez-nous</h1>
           <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)' }}>Nous sommes à votre disposition pour toute demande d'accompagnement.</p>

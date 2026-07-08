@@ -1,5 +1,7 @@
 import './globals.css';
 
+import Navigation from '../components/Navigation';
+
 export const metadata = {
   title: 'CIMAC by Ludovic CASSIN | Services Juridiques & Gestion',
   description: 'Création, dissolution et gestion d\'entreprises. Services juridiques et médiation de litiges par Ludovic CASSIN.',
@@ -9,23 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body>
-        <header className="header">
-          <div className="container">
-            <a href="/" className="logo">
-              <div className="logo-circle"></div>
-              CIMAC
-            </a>
-            <ul className="nav-links">
-              <li><a href="/">Accueil</a></li>
-              <li><a href="/services/creation">Création</a></li>
-              <li><a href="/services/gestion">Gestion</a></li>
-              <li><a href="/services/juridique">Juridique</a></li>
-              <li><a href="/services/mediation">Médiation</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </div>
-        </header>
+        <Navigation />
 
         <main>{children}</main>
 

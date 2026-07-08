@@ -7,8 +7,20 @@ export const metadata = {
 
 export default function PolitiqueConfidentialite() {
   return (
-    <div className="container" style={{ paddingTop: '120px', paddingBottom: '60px' }}>
-      <h1>Politique de Confidentialité</h1>
+    <>
+      <div className="section" style={{ 
+        backgroundImage: 'linear-gradient(rgba(26, 50, 88, 0.8), rgba(26, 50, 88, 0.8)), url("/images/office-1.avif")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: 'white', 
+        padding: '80px 0', 
+        textAlign: 'center' 
+      }}>
+        <div className="container animate-fade-in">
+          <h1 style={{ fontSize: '3rem', marginBottom: '10px', color: 'white' }}>Politique de Confidentialité</h1>
+        </div>
+      </div>
+      <div className="container" style={{ paddingTop: '60px', paddingBottom: '60px' }}>
 
       <section style={{ marginTop: '40px' }}>
         <h2>1. Introduction</h2>
@@ -72,5 +84,6 @@ export default function PolitiqueConfidentialite() {
         </p>
       </section>
     </div>
+    </>
   );
 }

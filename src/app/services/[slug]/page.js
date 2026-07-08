@@ -18,9 +18,10 @@ export default async function ServicePage({ params }) {
 
   const servicesData = {
     creation: {
-      title: 'Création d\'entreprises',
-      subtitle: 'Toutes formes juridiques',
-      icon: '🏢',
+      title: 'Création d\'entreprise',
+      subtitle: 'De l\'idée à l\'immatriculation',
+      icon: '🚀',
+      bgImage: 'office-1.avif',
       content: "La création d'une entreprise est une étape cruciale. Chez CIMAC, nous vous accompagnons dans le choix de la forme juridique la plus adaptée à votre projet (SAS, SARL, SCI, auto-entreprise, etc.) et prenons en charge l'ensemble des formalités administratives et légales. Concentrez-vous sur votre cœur de métier, nous nous occupons du reste.",
       benefits: ["Conseil sur le statut juridique", "Rédaction des statuts", "Immatriculation au RCS", "Obtention du Kbis"],
       problems: [
@@ -44,9 +45,10 @@ export default async function ServicePage({ params }) {
       ]
     },
     dissolution: {
-      title: 'Dissolution d\'entreprises',
-      subtitle: 'Accompagnement de A à Z',
-      icon: '📉',
+      title: 'Dissolution',
+      subtitle: 'Fermeture d\'entreprise simplifiée',
+      icon: '🔒',
+      bgImage: 'office-2.jpeg',
       content: "Fermer une entreprise nécessite de suivre une procédure stricte. Nous gérons la dissolution et la liquidation de toutes formes juridiques en assurant la conformité avec les exigences légales. Nous rédigeons les procès-verbaux, publions les annonces légales et effectuons les démarches de radiation.",
       benefits: ["Bilan de liquidation", "Annonce légale", "Radiation au registre des commerces", "Démarches fiscales"],
       problems: [
@@ -70,9 +72,10 @@ export default async function ServicePage({ params }) {
       ]
     },
     gestion: {
-      title: 'Gestion des entreprises',
-      subtitle: 'Administration et comptabilité',
+      title: 'Gestion & Administration',
+      subtitle: 'Externalisation et pilotage',
       icon: '📊',
+      bgImage: 'cta-bg.webp',
       content: "Une bonne gestion administrative et comptable est le pilier d'une entreprise saine. Nous proposons des services d'externalisation pour votre administration courante, le suivi de votre trésorerie, la préparation des documents comptables et la gestion de vos obligations déclaratives.",
       benefits: ["Saisie comptable", "Suivi de trésorerie", "Gestion administrative", "Tableaux de bord"],
       problems: [
@@ -96,6 +99,7 @@ export default async function ServicePage({ params }) {
       title: 'Services Juridiques',
       subtitle: 'Négociation avec les organismes publics',
       icon: '⚖️',
+      bgImage: 'office-1.avif',
       content: "Face à la complexité administrative, nous défendons vos intérêts. Nous intervenons pour négocier avec les organismes (URSSAF, impôts) et les services publics. Notre expertise nous permet de trouver des accords favorables et de résoudre les situations de blocage.",
       benefits: ["Négociation URSSAF", "Étalement de dettes", "Relations avec les impôts", "Assistance contrôle"],
       problems: [
@@ -119,6 +123,7 @@ export default async function ServicePage({ params }) {
       title: 'Médiation',
       subtitle: 'Résolution de litiges entre entreprises',
       icon: '🤝',
+      bgImage: 'hero-bg.avif',
       content: "Les conflits inter-entreprises peuvent être coûteux et longs. La médiation est une alternative amiable, rapide et confidentielle. Ludovic CASSIN intervient comme tiers neutre pour vous aider à renouer le dialogue avec vos partenaires et trouver une solution gagnant-gagnant.",
       benefits: ["Alternative aux tribunaux", "Rapidité et confidentialité", "Maintien des relations commerciales", "Accords sur-mesure"],
       problems: [
@@ -151,7 +156,14 @@ export default async function ServicePage({ params }) {
 
   return (
     <>
-      <div className="section" style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '80px 0', textAlign: 'center' }}>
+      <div className="section" style={{ 
+        backgroundImage: `linear-gradient(rgba(26, 50, 88, 0.8), rgba(26, 50, 88, 0.8)), url("/images/${service.bgImage}")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: 'white', 
+        padding: '80px 0', 
+        textAlign: 'center' 
+      }}>
         <div className="container animate-fade-in">
           <div style={{ fontSize: '4rem', marginBottom: '20px' }}>{service.icon}</div>
           <h1 style={{ fontSize: '3rem', marginBottom: '10px', color: 'white' }}>{service.title}</h1>

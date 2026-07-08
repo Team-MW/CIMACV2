@@ -34,7 +34,14 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <>
-      <div className="section" style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '80px 0', textAlign: 'center' }}>
+      <div className="section" style={{ 
+        backgroundImage: 'linear-gradient(rgba(26, 50, 88, 0.8), rgba(26, 50, 88, 0.8)), url("/images/hero-bg.avif")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: 'white', 
+        padding: '80px 0', 
+        textAlign: 'center' 
+      }}>
         <div className="container animate-fade-in" style={{ maxWidth: '800px' }}>
           <div style={{ fontSize: '1rem', color: 'var(--color-secondary)', marginBottom: '15px', fontWeight: 'bold' }}>
             {new Date(post.date).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })}
