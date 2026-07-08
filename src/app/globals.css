@@ -277,14 +277,16 @@ p {
     width: 250px;
     height: 100vh;
     background-color: var(--color-surface);
+    display: flex !important;
     flex-direction: column;
     padding: 80px 20px 20px;
     box-shadow: -5px 0 15px rgba(0,0,0,0.1);
     transition: right 0.3s ease;
+    z-index: 100;
   }
 
   .nav-links.active {
-    right: 0;
+    right: 0 !important;
   }
 }
 
