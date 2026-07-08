@@ -345,8 +345,14 @@ p {
 }
 
 @media (max-width: 768px) {
-  .nav-links { display: none; /* Hide on mobile for simplicity, or add burger menu later */ }
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .footer-grid > div:first-child {
+    grid-column: span 2;
+    text-align: center;
+  }
 }
 
 /* Animations */

@@ -35,8 +35,12 @@ export default function MentionsLegales() {
       <section style={{ marginTop: '40px' }}>
         <h2>2. Hébergement</h2>
         <p>
-          Ce site est hébergé par [Nom de l'hébergeur].<br />
-          [Adresse de l'hébergeur]
+          Ce site est hébergé par <strong>Vercel Inc.</strong><br />
+          Vercel Inc.<br />
+          440 N Barranca Ave #4133<br />
+          Covina, CA 91723<br />
+          États-Unis<br />
+          Site web : <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)' }}>https://vercel.com</a>
         </p>
       </section>
 
