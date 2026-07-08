@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://cimaccassin.fr/sitemap.xml',
+    sitemap: 'https://www.cimaccassin.fr/sitemap.xml',
   };
 }

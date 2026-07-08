@@ -4,12 +4,12 @@ import Navigation from '../components/Navigation';
 import FloatingContact from '../components/FloatingContact';
 
 export const metadata = {
-  metadataBase: new URL('https://cimaccassin.fr'),
+  metadataBase: new URL('https://www.cimaccassin.fr'),
   title: {
     default: 'CIMAC by Ludovic CASSIN | Services Juridiques & Gestion',
     template: '%s | CIMAC by Ludovic CASSIN',
   },
-  description: 'Cabinet de conseil expert en création, dissolution et gestion d\'entreprises. Services juridiques, médiation de litiges et assistance URSSAF par Ludovic CASSIN.',
+  description: 'Expertise juridique et gestion d\'entreprise. CIMAC by Ludovic CASSIN vous accompagne en création, dissolution, médiation de litiges et assistance URSSAF.',
   keywords: ['Création entreprise', 'Gestion entreprise', 'Dissolution', 'Médiation litiges', 'Assistance URSSAF', 'Services juridiques', 'Ludovic CASSIN', 'CIMAC'],
   authors: [{ name: 'Ludovic CASSIN' }],
   creator: 'CIMAC',
@@ -21,8 +21,8 @@ export const metadata = {
   },
   openGraph: {
     title: 'CIMAC by Ludovic CASSIN | Services Juridiques & Gestion',
-    description: 'Expertise en création, dissolution et gestion d\'entreprises. Services juridiques et médiation de litiges.',
-    url: 'https://cimaccassin.fr',
+    description: 'Expertise juridique et gestion d\'entreprise. CIMAC by Ludovic CASSIN vous accompagne en création, dissolution, médiation de litiges et assistance URSSAF.',
+    url: 'https://www.cimaccassin.fr',
     siteName: 'CIMAC by Ludovic CASSIN',
     locale: 'fr_FR',
     type: 'website',

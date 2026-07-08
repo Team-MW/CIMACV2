@@ -1,7 +1,7 @@
 import { blogPosts } from './blog/data';
 
 export default function sitemap() {
-  const baseUrl = 'https://cimaccassin.fr';
+  const baseUrl = 'https://www.cimaccassin.fr';
 
   // Routes statiques
   const staticRoutes = [
