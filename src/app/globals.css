@@ -376,3 +376,58 @@ p {
     height: 1250px;
   }
 }
+
+/* Floating Contact Button */
+.floating-contact {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px 10px 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(26, 50, 88, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(26, 50, 88, 0.6);
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.floating-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.floating-text {
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .floating-contact {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+  }
+  .floating-text {
+    display: none;
+  }
+  .floating-icon {
+    margin-right: 0;
+  }
+}

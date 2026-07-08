@@ -1,6 +1,7 @@
 import './globals.css';
 
 import Navigation from '../components/Navigation';
+import FloatingContact from '../components/FloatingContact';
 
 export const metadata = {
   metadataBase: new URL('https://cimaccassin.fr'),
@@ -50,6 +51,8 @@ export default function RootLayout({ children }) {
 
         <main>{children}</main>
 
+        <FloatingContact />
+
         <footer className="footer">
           <div className="container">
             <div className="footer-grid">
@@ -72,8 +75,8 @@ export default function RootLayout({ children }) {
                 <h3>Contact</h3>
                 <ul>
                   <li><a href="/contact">Nous contacter</a></li>
-                  <li>Email: contact@cimac.fr</li>
-                  <li>Tél: 01 23 45 67 89</li>
+                  <li>Email: cimacludovic@gmail.com</li>
+                  <li>Tél: +33 6 29 64 24 27</li>
                 </ul>
               </div>
             </div>

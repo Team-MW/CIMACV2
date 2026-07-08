@@ -29,7 +29,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 style={{ margin: 0, color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '5px', fontWeight: '700' }}>Téléphone</h4>
-                    <p style={{ margin: 0, color: 'var(--color-text)', fontSize: '1.1rem' }}>01 23 45 67 89</p>
+                    <p style={{ margin: 0, color: 'var(--color-text)', fontSize: '1.1rem' }}>+33 6 29 64 24 27</p>
                   </div>
                 </div>
 
@@ -39,7 +39,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 style={{ margin: 0, color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '5px', fontWeight: '700' }}>Email</h4>
-                    <p style={{ margin: 0, color: 'var(--color-text)', fontSize: '1.1rem' }}>contact@cimac.fr</p>
+                    <p style={{ margin: 0, color: 'var(--color-text)', fontSize: '1.1rem' }}>cimacludovic@gmail.com</p>
                   </div>
                 </div>
 

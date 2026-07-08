@@ -26,9 +26,8 @@ export default function MentionsLegales() {
         <h2>1. Éditeur du site</h2>
         <p>
           Le présent site est édité par <strong>CIMAC by Ludovic CASSIN</strong>.<br />
-          [Adresse de l'entreprise]<br />
-          Email: contact@cimac.fr<br />
-          Tél: 01 23 45 67 89
+          Email: cimacludovic@gmail.com<br />
+          Tél: +33 6 29 64 24 27
         </p>
       </section>
 
