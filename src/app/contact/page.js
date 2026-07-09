@@ -39,7 +39,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 style={{ margin: 0, color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '5px', fontWeight: '700' }}>Email</h4>
-                    <p style={{ margin: 0, color: 'var(--color-text)', fontSize: '1.1rem' }}>cimacludovic@gmail.com</p>
+                    <p style={{ margin: 0, color: 'var(--color-text)', fontSize: '1.1rem' }}>presidentcimac@gmail.com</p>
                   </div>
                 </div>
 

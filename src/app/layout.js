@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
                 <h3>Contact</h3>
                 <ul>
                   <li><a href="/contact">Nous contacter</a></li>
-                  <li>Email: cimacludovic@gmail.com</li>
+                  <li>Email: presidentcimac@gmail.com</li>
                   <li>Tél: +33 6 29 64 24 27</li>
                 </ul>
               </div>
