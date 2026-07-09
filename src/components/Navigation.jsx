@@ -20,7 +20,7 @@ export default function Navigation() {
     <header className="header">
       <div className="container">
         <Link href="/" className="logo" onClick={closeMenu}>
-          <div className="logo-circle"></div>
+          <img src="/logo.jpeg" alt="CIMAC Logo" style={{ height: '40px', width: '40px', objectFit: 'cover', borderRadius: '50%' }} />
           CIMAC
         </Link>
         
