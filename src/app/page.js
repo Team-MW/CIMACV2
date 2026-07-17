@@ -73,7 +73,8 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="container animate-fade-in">
+        <div className="container animate-fade-in" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+          <img src="/logo-full.jpeg" alt="CIMAC Logo" style={{ height: '100px', width: 'auto', marginBottom: '30px', objectFit: 'contain', borderRadius: 'var(--radius-md)', padding: '10px', backgroundColor: 'rgba(255,255,255,0.9)' }} />
           <h1 className="hero-title">Votre Partenaire Stratégique</h1>
           <p className="hero-subtitle">
             CIMAC by Ludovic CASSIN vous accompagne dans toutes les étapes clés de la vie de votre entreprise : de la création à la gestion, en passant par la médiation et les services juridiques.

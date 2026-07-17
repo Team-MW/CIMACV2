@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
           <div className="container">
             <div className="footer-grid">
               <div>
-                <h3>CIMAC by Ludovic CASSIN</h3>
+                <img src="/logo-full.jpeg" alt="CIMAC Logo" style={{ height: '50px', width: 'auto', objectFit: 'contain', marginBottom: '15px', borderRadius: 'var(--radius-md)' }} />
                 <p>Expertise et accompagnement professionnel pour toutes les étapes de la vie de votre entreprise.</p>
               </div>
               <div>
@@ -75,8 +75,8 @@ export default function RootLayout({ children }) {
                 <h3>Contact</h3>
                 <ul>
                   <li><a href="/contact">Nous contacter</a></li>
-                  <li>Email: presidentcimac@gmail.com</li>
-                  <li>Tél: +33 6 29 64 24 27</li>
+                  <li>Email: <a href="mailto:presidentcimac@gmail.com">presidentcimac@gmail.com</a></li>
+                  <li>Tél: <a href="tel:+33629642427">+33 6 29 64 24 27</a></li>
                 </ul>
               </div>
             </div>

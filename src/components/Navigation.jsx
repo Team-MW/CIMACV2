@@ -20,8 +20,7 @@ export default function Navigation() {
     <header className="header">
       <div className="container">
         <Link href="/" className="logo" onClick={closeMenu}>
-          <img src="/logo.jpeg" alt="CIMAC Logo" style={{ height: '40px', width: '40px', objectFit: 'cover', borderRadius: '50%' }} />
-          CIMAC
+          <img src="/logo-full.jpeg" alt="CIMAC Logo" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
         </Link>
         
         <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>

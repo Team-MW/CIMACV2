@@ -26,8 +26,8 @@ export default function MentionsLegales() {
         <h2>1. Éditeur du site</h2>
         <p>
           Le présent site est édité par <strong>CIMAC by Ludovic CASSIN</strong>.<br />
-          Email: presidentcimac@gmail.com<br />
-          Tél: +33 6 29 64 24 27
+          Email: <a href="mailto:presidentcimac@gmail.com" style={{ color: 'var(--color-primary)' }}>presidentcimac@gmail.com</a><br />
+          Tél: <a href="tel:+33629642427" style={{ color: 'var(--color-primary)' }}>+33 6 29 64 24 27</a>
         </p>
       </section>
 
