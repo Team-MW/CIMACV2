@@ -1,4 +1,4 @@
-import { blogPostsFr } from '../locales/blog/fr';
+import { blogPostsFr } from '../locales/blog/fr.js';
 
 export default function sitemap() {
   const baseUrl = 'https://www.cimaccassin.fr';

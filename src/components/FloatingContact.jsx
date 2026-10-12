@@ -1,10 +1,21 @@
 'use client';
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import { commonTranslations } from '../locales/common';
 
-export default function FloatingContact({ locale = 'fr' }) {
-  const text = commonTranslations[locale]?.floating?.callUs || commonTranslations.fr.floating.callUs;
+export default function FloatingContact({ locale }) {
+  const pathname = usePathname();
+  let currentLocale = locale;
+  if (!currentLocale && pathname) {
+    const firstSegment = pathname.split('/').filter(Boolean)[0];
+    if (['fr', 'en', 'ru'].includes(firstSegment)) {
+      currentLocale = firstSegment;
+    }
+  }
+  if (!currentLocale) currentLocale = 'fr';
+
+  const text = commonTranslations[currentLocale]?.floating?.callUs || commonTranslations.fr.floating.callUs;
 
   return (
     <a 

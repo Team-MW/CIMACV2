@@ -1,6 +1,6 @@
-import { blogPostsFr } from './fr';
-import { blogPostsEn } from './en';
-import { blogPostsRu } from './ru';
+import { blogPostsFr } from './fr.js';
+import { blogPostsEn } from './en.js';
+import { blogPostsRu } from './ru.js';
 
 export const blogPostsByLocale = {
   fr: blogPostsFr,

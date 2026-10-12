@@ -1,10 +1,10 @@
-import { commonTranslations } from './common';
-import { homeTranslations } from './home';
-import { servicesTranslations } from './services';
-import { contactTranslations } from './contact';
-import { legalTranslations } from './legal';
-import { metaTranslations } from './meta';
-import { getBlogPosts, getBlogPost } from './blog';
+import { commonTranslations } from './common.js';
+import { homeTranslations } from './home.js';
+import { servicesTranslations } from './services.js';
+import { contactTranslations } from './contact.js';
+import { legalTranslations } from './legal.js';
+import { metaTranslations } from './meta.js';
+import { getBlogPosts, getBlogPost } from './blog/index.js';
 
 export const locales = ['fr', 'en', 'ru'];
 export const defaultLocale = 'fr';
