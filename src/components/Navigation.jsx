@@ -2,11 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import LanguageSwitcher from './LanguageSwitcher';
+import { commonTranslations } from '../locales/common';
 
-export default function Navigation() {
+export default function Navigation({ locale = 'fr' }) {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const t = commonTranslations[locale]?.nav || commonTranslations.fr.nav;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,26 +19,35 @@ export default function Navigation() {
 
   return (
     <header className="header">
-      <div className="container">
-        <Link href="/" className="logo" onClick={closeMenu}>
+      <div className="container header-container">
+        <Link href={`/${locale}`} className="logo" onClick={closeMenu}>
           <img src="/logo-full.jpeg" alt="CIMAC Logo" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
         </Link>
-        
-        <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-        </div>
 
-        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <li><Link href="/" onClick={closeMenu}>Accueil</Link></li>
-          <li><Link href="/services/creation" onClick={closeMenu}>Création</Link></li>
-          <li><Link href="/services/gestion" onClick={closeMenu}>Gestion</Link></li>
-          <li><Link href="/services/juridique" onClick={closeMenu}>Juridique</Link></li>
-          <li><Link href="/services/mediation" onClick={closeMenu}>Médiation</Link></li>
-          <li><Link href="/blog" onClick={closeMenu}>Blog</Link></li>
-          <li><Link href="/contact" onClick={closeMenu}>Contact</Link></li>
-        </ul>
+        <div className="header-actions">
+          <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+            <li><Link href={`/${locale}`} onClick={closeMenu}>{t.home}</Link></li>
+            <li><Link href={`/${locale}/services/creation`} onClick={closeMenu}>{t.creation}</Link></li>
+            <li><Link href={`/${locale}/services/gestion`} onClick={closeMenu}>{t.management}</Link></li>
+            <li><Link href={`/${locale}/services/juridique`} onClick={closeMenu}>{t.legal}</Link></li>
+            <li><Link href={`/${locale}/services/mediation`} onClick={closeMenu}>{t.mediation}</Link></li>
+            <li><Link href={`/${locale}/blog`} onClick={closeMenu}>{t.blog}</Link></li>
+            <li><Link href={`/${locale}/contact`} onClick={closeMenu}>{t.contact}</Link></li>
+            <li className="mobile-only-lang">
+              <LanguageSwitcher currentLocale={locale} onSelect={closeMenu} />
+            </li>
+          </ul>
+
+          <div className="desktop-lang">
+            <LanguageSwitcher currentLocale={locale} />
+          </div>
+
+          <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Menu">
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+          </div>
+        </div>
       </div>
     </header>
   );
