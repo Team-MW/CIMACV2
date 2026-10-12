@@ -13,7 +13,7 @@ for x in range(width):
             min_val = val
     col_min.append(min_val)
 
-# lower threshold
+# lower thresholddsd
 col_has_ink = [v < 150 for v in col_min]
 
 ink_regions = []
