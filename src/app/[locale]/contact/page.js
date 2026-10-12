@@ -10,10 +10,11 @@ export async function generateMetadata({ params }) {
   const { locale } = await params;
   const lang = validLocales.includes(locale) ? locale : 'fr';
   const c = contactTranslations[lang] || contactTranslations.fr;
+  const hero = c?.hero || contactTranslations.fr.hero;
 
   return {
-    title: `${c.hero.title} | CIMAC by Ludovic CASSIN`,
-    description: c.hero.subtitle,
+    title: `${hero.title} | CIMAC by Ludovic CASSIN`,
+    description: hero.subtitle,
     alternates: {
       canonical: `https://www.cimaccassin.fr/${lang}/contact`,
       languages: {
@@ -30,6 +31,8 @@ export default async function LocalizedContactPage({ params }) {
   const { locale } = await params;
   const lang = validLocales.includes(locale) ? locale : 'fr';
   const c = contactTranslations[lang] || contactTranslations.fr;
+  const hero = c.hero || contactTranslations.fr.hero;
+  const form = c.formSection || c.section || contactTranslations.fr.formSection;
 
   return (
     <>
@@ -46,9 +49,9 @@ export default async function LocalizedContactPage({ params }) {
       >
         <div className="container animate-fade-in">
           <h1 style={{ fontSize: '3.5rem', marginBottom: '10px', color: 'white', fontWeight: '700' }}>
-            {c.hero.title}
+            {hero.title}
           </h1>
-          <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)' }}>{c.hero.subtitle}</p>
+          <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.8)' }}>{hero.subtitle}</p>
         </div>
       </div>
 
@@ -56,9 +59,9 @@ export default async function LocalizedContactPage({ params }) {
         <div className="container">
           <div className="grid grid-cols-2" style={{ gap: '60px' }}>
             <div className="animate-fade-in">
-              <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>{c.formSection.title}</h2>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>{form.title}</h2>
               <p style={{ marginBottom: '30px', fontSize: '1.1rem', color: 'var(--color-text-light)' }}>
-                {c.formSection.subtitle}
+                {form.subtitle || form.description}
               </p>
 
               <div className="grid grid-cols-1" style={{ gap: '20px', marginTop: '40px' }}>
@@ -92,7 +95,7 @@ export default async function LocalizedContactPage({ params }) {
                   </div>
                   <div>
                     <h4 style={{ margin: 0, color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '5px', fontWeight: '700' }}>
-                      {c.formSection.phoneLabel}
+                      {form.phoneLabel || form.phoneTitle}
                     </h4>
                     <p style={{ margin: 0, fontSize: '1.1rem' }}>
                       <a href="tel:+33629642427" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>
@@ -133,7 +136,7 @@ export default async function LocalizedContactPage({ params }) {
                   </div>
                   <div>
                     <h4 style={{ margin: 0, color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '5px', fontWeight: '700' }}>
-                      {c.formSection.emailLabel}
+                      {form.emailLabel || form.emailTitle}
                     </h4>
                     <p style={{ margin: 0, fontSize: '1.1rem' }}>
                       <a href="mailto:presidentcimac@gmail.com" style={{ color: 'var(--color-text)', textDecoration: 'none' }}>
@@ -174,10 +177,10 @@ export default async function LocalizedContactPage({ params }) {
                   </div>
                   <div>
                     <h4 style={{ margin: 0, color: 'var(--color-primary)', fontSize: '1.2rem', marginBottom: '5px', fontWeight: '700' }}>
-                      {c.formSection.addressLabel}
+                      {form.addressLabel || form.addressTitle}
                     </h4>
                     <p style={{ margin: 0, color: 'var(--color-text)', fontSize: '1.1rem' }}>
-                      {c.formSection.addressValue}
+                      {form.addressValue}
                     </p>
                   </div>
                 </div>
@@ -187,7 +190,7 @@ export default async function LocalizedContactPage({ params }) {
             <div className="glass animate-fade-in" style={{ padding: '0', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
               <iframe
                 id="JotFormIFrame-261883116403353"
-                title={c.formSection.formTitle}
+                title={form.formTitle || form.iframeTitle}
                 allowTransparency="true"
                 allowFullScreen="true"
                 allow="geolocation; microphone; camera"

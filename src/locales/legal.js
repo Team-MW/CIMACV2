@@ -2,6 +2,25 @@ export const legalTranslations = {
   fr: {
     mentions: {
       title: 'Mentions Légales',
+      description: 'Mentions légales du site CIMAC by Ludovic CASSIN.',
+      sections: [
+        {
+          title: '1. Éditeur du site',
+          content: 'Le présent site est édité par <strong>CIMAC by Ludovic CASSIN</strong>.<br />Email : <a href="mailto:presidentcimac@gmail.com" style="color: var(--color-primary)">presidentcimac@gmail.com</a><br />Tél : <a href="tel:+33629642427" style="color: var(--color-primary)">+33 6 29 64 24 27</a>',
+        },
+        {
+          title: '2. Hébergement',
+          content: 'Ce site est hébergé par <strong>Vercel Inc.</strong><br />440 N Barranca Ave #4133<br />Covina, CA 91723<br />États-Unis<br />Site web : <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary)">https://vercel.com</a>',
+        },
+        {
+          title: '3. Conception et Réalisation',
+          content: 'Site web réalisé par <a href="https://microdidact.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-secondary); text-decoration: none; font-weight: bold;">Microdidact</a>.',
+        },
+        {
+          title: '4. Propriété intellectuelle',
+          content: "L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.",
+        },
+      ],
       section1Title: '1. Éditeur du site',
       section1Content: 'Le présent site est édité par <strong>CIMAC by Ludovic CASSIN</strong>.<br />Email : <a href="mailto:presidentcimac@gmail.com" style="color: var(--color-primary)">presidentcimac@gmail.com</a><br />Tél : <a href="tel:+33629642427" style="color: var(--color-primary)">+33 6 29 64 24 27</a>',
       section2Title: '2. Hébergement',
@@ -13,6 +32,29 @@ export const legalTranslations = {
     },
     privacy: {
       title: 'Politique de Confidentialité',
+      description: 'Politique de confidentialité et gestion des données personnelles du site CIMAC by Ludovic CASSIN.',
+      sections: [
+        {
+          title: '1. Introduction',
+          content: 'Chez <strong>CIMAC by Ludovic CASSIN</strong>, nous accordons une grande importance à la protection et à la confidentialité de vos données personnelles. La présente politique vise à vous informer sur la manière dont nous collectons, utilisons et protégeons les informations que vous nous transmettez via notre site internet.',
+        },
+        {
+          title: '2. Collecte des données personnelles',
+          content: 'Nous pouvons être amenés à collecter vos données personnelles (nom, prénom, adresse email, numéro de téléphone, entreprise) lorsque vous remplissez notre formulaire de contact ou nous contactez par email ou téléphone. Ces informations sont recueillies de manière explicite et avec votre consentement.',
+        },
+        {
+          title: '3. Utilisation de vos données',
+          content: 'Les informations recueillies sont destinées exclusivement à <strong>CIMAC by Ludovic CASSIN</strong> afin de répondre à vos demandes, établir des devis et assurer le suivi commercial de votre dossier. Vos données ne sont jamais vendues ou cédées à des tiers.',
+        },
+        {
+          title: '4. Sécurité et conservation',
+          content: 'Nous mettons en œuvre des mesures de sécurité techniques appropriées. Vos données sont conservées pendant la durée strictement nécessaire au traitement de votre demande conformément aux obligations légales.',
+        },
+        {
+          title: '5. Vos droits (RGPD)',
+          content: "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition concernant vos données. Pour exercer vos droits, contactez-nous à : <strong>presidentcimac@gmail.com</strong>.",
+        },
+      ],
       section1Title: '1. Introduction',
       section1Content: 'Chez <strong>CIMAC by Ludovic CASSIN</strong>, nous accordons une grande importance à la protection et à la confidentialité de vos données personnelles. La présente politique vise à vous informer sur la manière dont nous collectons, utilisons et protégeons les informations que vous nous transmettez via notre site internet.',
       section2Title: '2. Collecte des données personnelles',
@@ -28,6 +70,25 @@ export const legalTranslations = {
   en: {
     mentions: {
       title: 'Legal Notice',
+      description: 'Legal Notice of CIMAC by Ludovic CASSIN website.',
+      sections: [
+        {
+          title: '1. Website Publisher',
+          content: 'This website is published by <strong>CIMAC by Ludovic CASSIN</strong>.<br />Email: <a href="mailto:presidentcimac@gmail.com" style="color: var(--color-primary)">presidentcimac@gmail.com</a><br />Phone: <a href="tel:+33629642427" style="color: var(--color-primary)">+33 6 29 64 24 27</a>',
+        },
+        {
+          title: '2. Hosting Provider',
+          content: 'This site is hosted by <strong>Vercel Inc.</strong><br />440 N Barranca Ave #4133<br />Covina, CA 91723<br />United States<br />Website: <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary)">https://vercel.com</a>',
+        },
+        {
+          title: '3. Design and Development',
+          content: 'Website crafted by <a href="https://microdidact.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-secondary); text-decoration: none; font-weight: bold;">Microdidact</a>.',
+        },
+        {
+          title: '4. Intellectual Property',
+          content: 'The entirety of this website is governed by French and international legislation on copyright and intellectual property. All reproduction rights are reserved, including for downloadable documents and graphical elements.',
+        },
+      ],
       section1Title: '1. Website Publisher',
       section1Content: 'This website is published by <strong>CIMAC by Ludovic CASSIN</strong>.<br />Email: <a href="mailto:presidentcimac@gmail.com" style="color: var(--color-primary)">presidentcimac@gmail.com</a><br />Phone: <a href="tel:+33629642427" style="color: var(--color-primary)">+33 6 29 64 24 27</a>',
       section2Title: '2. Hosting Provider',
@@ -39,6 +100,29 @@ export const legalTranslations = {
     },
     privacy: {
       title: 'Privacy Policy',
+      description: 'Privacy Policy and Personal Data Protection for CIMAC by Ludovic CASSIN.',
+      sections: [
+        {
+          title: '1. Introduction',
+          content: 'At <strong>CIMAC by Ludovic CASSIN</strong>, we attach great importance to the protection and confidentiality of your personal data. This privacy policy details how we collect, process, and safeguard the information you transmit to us through our website.',
+        },
+        {
+          title: '2. Personal Data Collection',
+          content: 'We may collect your personal data (full name, email address, telephone number, company name) when you fill out our contact form or contact us via email or telephone. This data is collected explicitly and with your consent.',
+        },
+        {
+          title: '3. Use of Data',
+          content: 'Information gathered is intended exclusively for <strong>CIMAC by Ludovic CASSIN</strong> to respond to inquiries, formulate customized fee proposals, and manage our client relationship. Your data will never be sold, leased, or transferred to third parties.',
+        },
+        {
+          title: '4. Security and Data Retention',
+          content: 'We apply appropriate technical and organizational safeguards to shield your data against unauthorized access or disclosure. Data is kept only for the duration strictly necessary for commercial and regulatory compliance purposes.',
+        },
+        {
+          title: '5. Your GDPR Rights',
+          content: 'In accordance with the EU General Data Protection Regulation (GDPR), you hold the right to access, rectify, delete, or object to the processing of your personal data. To exercise your rights, please contact us at: <strong>presidentcimac@gmail.com</strong>.',
+        },
+      ],
       section1Title: '1. Introduction',
       section1Content: 'At <strong>CIMAC by Ludovic CASSIN</strong>, we attach great importance to the protection and confidentiality of your personal data. This privacy policy details how we collect, process, and safeguard the information you transmit to us through our website.',
       section2Title: '2. Personal Data Collection',
@@ -54,6 +138,25 @@ export const legalTranslations = {
   ru: {
     mentions: {
       title: 'Правовая информация (Mentions Légales)',
+      description: 'Правовая информация сайта CIMAC by Ludovic CASSIN.',
+      sections: [
+        {
+          title: '1. Владелец сайта',
+          content: 'Настоящий сайт администрируется компанией <strong>CIMAC by Ludovic CASSIN</strong>.<br />Email: <a href="mailto:presidentcimac@gmail.com" style="color: var(--color-primary)">presidentcimac@gmail.com</a><br />Телефон: <a href="tel:+33629642427" style="color: var(--color-primary)">+33 6 29 64 24 27</a>',
+        },
+        {
+          title: '2. Хостинг-провайдер',
+          content: 'Хостинг сайта обеспечивается компанией <strong>Vercel Inc.</strong><br />440 N Barranca Ave #4133<br />Covina, CA 91723<br />США<br />Сайт: <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary)">https://vercel.com</a>',
+        },
+        {
+          title: '3. Дизайн и разработка',
+          content: 'Сайт разработан <a href="https://microdidact.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-secondary); text-decoration: none; font-weight: bold;">Microdidact</a>.',
+        },
+        {
+          title: '4. Интеллектуальная собственность',
+          content: 'Все материалы сайта защищены французским и международным законодательством об авторском праве и интеллектуальной собственности. Любое воспроизведение или использование материалов без предварительного согласия запрещено.',
+        },
+      ],
       section1Title: '1. Владелец сайта',
       section1Content: 'Настоящий сайт администрируется компанией <strong>CIMAC by Ludovic CASSIN</strong>.<br />Email: <a href="mailto:presidentcimac@gmail.com" style="color: var(--color-primary)">presidentcimac@gmail.com</a><br />Телефон: <a href="tel:+33629642427" style="color: var(--color-primary)">+33 6 29 64 24 27</a>',
       section2Title: '2. Хостинг-провайдер',
@@ -65,6 +168,29 @@ export const legalTranslations = {
     },
     privacy: {
       title: 'Политика конфиденциальности (RGPD)',
+      description: 'Политика конфиденциальности и защита персональных данных CIMAC by Ludovic CASSIN.',
+      sections: [
+        {
+          title: '1. Общие положения',
+          content: 'Кабинет <strong>CIMAC by Ludovic CASSIN</strong> уделяет приоритетное внимание безопасности и конфиденциальности персональных данных пользователей. Настоящая политика разъясняет порядок сбора, обработки и защиты информации, поступающей через сайт.',
+        },
+        {
+          title: '2. Сбор персональных данных',
+          content: 'Мы можем собирать ваши персональные данные (ФИО, email, контактный телефон, наименование компании) при заполнении формы обратной связи или обращении по телефону/email. Сбор осуществляется исключительно с вашего согласия.',
+        },
+        {
+          title: '3. Использование данных',
+          content: 'Собранные сведения используются исключительно <strong>CIMAC by Ludovic CASSIN</strong> для обработки запросов, подготовки индивидуальных смет и сопровождения договоров. Персональные данные ни при каких обстоятельствах не передаются третьим лицам в маркетинговых целях.',
+        },
+        {
+          title: '4. Безопасность и сроки хранения',
+          content: 'Мы применяем строгие технические протоколы безопасности для защиты информации от несанкционированного доступа. Данные хранятся в течение срока, необходимого для выполнения обязательств и соблюдения законов Франции.',
+        },
+        {
+          title: '5. Ваши права в соответствии с GDPR',
+          content: 'В соответствии с европейским регламентом GDPR (RGPD) вы обладаете правом доступа, исправления, удаления и запрета обработки ваших персональных данных. Для реализации прав направьте запрос на: <strong>presidentcimac@gmail.com</strong>.',
+        },
+      ],
       section1Title: '1. Общие положения',
       section1Content: 'Кабинет <strong>CIMAC by Ludovic CASSIN</strong> уделяет приоритетное внимание безопасности и конфиденциальности персональных данных пользователей. Настоящая политика разъясняет порядок сбора, обработки и защиты информации, поступающей через сайт.',
       section2Title: '2. Сбор персональных данных',
