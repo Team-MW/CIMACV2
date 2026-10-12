@@ -44,6 +44,7 @@ export default async function LocalizedServicePage({ params }) {
   const lang = validLocales.includes(locale) ? locale : 'fr';
   const service = servicesTranslations[lang]?.[slug];
   const common = commonTranslations[lang] || commonTranslations.fr;
+  const labels = common.serviceLabels || commonTranslations.fr.serviceLabels;
 
   if (!service) {
     notFound();
@@ -73,11 +74,11 @@ export default async function LocalizedServicePage({ params }) {
         <div className="container">
           <div className="grid grid-cols-2" style={{ gap: '60px', alignItems: 'flex-start' }}>
             <div className="animate-fade-in" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
-              <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>{service.aboutTitle}</h2>
+              <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>{labels.aboutTitle}</h2>
               <p>{service.content}</p>
 
               <h3 style={{ fontSize: '1.5rem', marginTop: '40px', marginBottom: '20px' }}>
-                {service.strengthsTitle}
+                {labels.strengthsTitle}
               </h3>
               <ul style={{ listStyle: 'none' }}>
                 {service.benefits.map((benefit, idx) => (
@@ -105,16 +106,16 @@ export default async function LocalizedServicePage({ params }) {
             </div>
 
             <div className="glass animate-fade-in" style={{ padding: '40px', borderRadius: 'var(--radius-lg)' }}>
-              <h3 style={{ marginBottom: '20px', color: 'var(--color-primary)' }}>{service.contactBox.title}</h3>
+              <h3 style={{ marginBottom: '20px', color: 'var(--color-primary)' }}>{labels.contactBoxTitle}</h3>
               <p style={{ marginBottom: '30px', color: 'var(--color-text-light)' }}>
-                {service.contactBox.text}
+                {labels.contactBoxText}
               </p>
               <Link
                 href={`/${lang}/contact`}
                 className="btn btn-primary"
                 style={{ width: '100%', textAlign: 'center', display: 'block' }}
               >
-                {service.contactBox.button}
+                {labels.contactBoxButton}
               </Link>
             </div>
           </div>
@@ -124,8 +125,8 @@ export default async function LocalizedServicePage({ params }) {
       <div className="section" style={{ backgroundColor: 'var(--color-background)' }}>
         <div className="container">
           <div className="text-center" style={{ marginBottom: '50px' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '15px' }}>{service.problemsTitle}</h2>
-            <p style={{ maxWidth: '600px', margin: '0 auto' }}>{service.problemsSubtitle}</p>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '15px' }}>{labels.problemsTitle}</h2>
+            <p style={{ maxWidth: '600px', margin: '0 auto' }}>{labels.problemsSubtitle}</p>
           </div>
           <div className="grid grid-cols-2" style={{ gap: '20px' }}>
             {service.problems.map((problem, idx) => (
@@ -145,8 +146,8 @@ export default async function LocalizedServicePage({ params }) {
       <div className="section">
         <div className="container">
           <div className="text-center" style={{ marginBottom: '50px' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '15px' }}>{service.processTitle}</h2>
-            <p style={{ maxWidth: '600px', margin: '0 auto' }}>{service.processSubtitle}</p>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '15px' }}>{labels.processTitle}</h2>
+            <p style={{ maxWidth: '600px', margin: '0 auto' }}>{labels.processSubtitle}</p>
           </div>
           <div className="grid grid-cols-4" style={{ gap: '20px' }}>
             {service.process.map((step, idx) => (
@@ -193,7 +194,7 @@ export default async function LocalizedServicePage({ params }) {
         </div>
       </div>
 
-      <FAQ title={service.faqsTitle} items={service.faqs} />
+      <FAQ title={labels.faqsTitle} items={service.faqs} />
     </>
   );
 }

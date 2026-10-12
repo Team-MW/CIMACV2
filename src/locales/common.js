@@ -38,6 +38,18 @@ export const commonTranslations = {
       en: 'English',
       ru: 'Русский',
     },
+    serviceLabels: {
+      aboutTitle: 'À propos de ce service',
+      strengthsTitle: 'Nos points forts',
+      contactBoxTitle: 'Intéressé par ce service ?',
+      contactBoxText: 'Contactez-nous pour obtenir un devis personnalisé ou pour échanger sur vos besoins spécifiques avec Ludovic CASSIN.',
+      contactBoxButton: 'Demander des informations',
+      problemsTitle: 'Les problématiques que nous résolvons',
+      problemsSubtitle: 'Si vous vous reconnaissez dans ces situations, notre expertise est faite pour vous.',
+      processTitle: "Notre processus d'accompagnement",
+      processSubtitle: 'Une méthode claire et éprouvée pour sécuriser chaque démarche.',
+      faqsTitle: 'Questions fréquentes sur ce service',
+    },
   },
   en: {
     nav: {
@@ -78,6 +90,18 @@ export const commonTranslations = {
       en: 'English',
       ru: 'Русский',
     },
+    serviceLabels: {
+      aboutTitle: 'About this service',
+      strengthsTitle: 'Our Strengths',
+      contactBoxTitle: 'Interested in this service?',
+      contactBoxText: 'Contact us for a tailored quote or to discuss your specific requirements directly with Ludovic CASSIN.',
+      contactBoxButton: 'Request Information',
+      problemsTitle: 'Challenges We Solve',
+      problemsSubtitle: 'If you relate to these challenges, our expertise is built to guide and safeguard you.',
+      processTitle: 'Our Advisory Process',
+      processSubtitle: 'A structured, proven methodology to secure every stage of your procedure.',
+      faqsTitle: 'Frequently Asked Questions',
+    },
   },
   ru: {
     nav: {
@@ -117,6 +141,18 @@ export const commonTranslations = {
       fr: 'Français',
       en: 'English',
       ru: 'Русский',
+    },
+    serviceLabels: {
+      aboutTitle: 'Об этой услуге',
+      strengthsTitle: 'Наши преимущества',
+      contactBoxTitle: 'Заинтересовала эта услуга?',
+      contactBoxText: 'Свяжитесь с нами для получения индивидуального расчета или консультации с Людовиком Кассеном.',
+      contactBoxButton: 'Запросить консультацию',
+      problemsTitle: 'Проблемы, которые мы решаем',
+      problemsSubtitle: 'Если вы сталкиваетесь с этими трудностями, наша экспертиза поможет решить их безопасно и эффективно.',
+      processTitle: 'Этапы нашего сопровождения',
+      processSubtitle: 'Четкая и проверенная методология для безопасного прохождения каждого этапа.',
+      faqsTitle: 'Часто задаваемые вопросы',
     },
   },
 };
