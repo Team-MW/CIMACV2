@@ -67,7 +67,7 @@ export default function Contact() {
                 allowTransparency="true"
                 allowFullScreen="true"
                 allow="geolocation; microphone; camera"
-                src="https://form.jotform.com/261883116403353"
+                src="https://form.jotform.com/261883116403353?language=fr"
                 frameBorder="0"
                 className="jotform-iframe"
                 scrolling="no"

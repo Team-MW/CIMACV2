@@ -1,6 +1,12 @@
 import { contactTranslations } from '../../../locales/contact';
 
 const validLocales = ['fr', 'en', 'ru'];
+const jotformId = '261883116403353';
+
+function jotformSrc(lang) {
+  const language = validLocales.includes(lang) ? lang : 'fr';
+  return `https://form.jotform.com/${jotformId}?language=${language}`;
+}
 
 export async function generateStaticParams() {
   return [{ locale: 'fr' }, { locale: 'en' }, { locale: 'ru' }];
@@ -189,12 +195,13 @@ export default async function LocalizedContactPage({ params }) {
 
             <div className="glass animate-fade-in" style={{ padding: '0', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
               <iframe
-                id="JotFormIFrame-261883116403353"
+                key={lang}
+                id={`JotFormIFrame-${jotformId}`}
                 title={form.formTitle || form.iframeTitle}
                 allowTransparency="true"
                 allowFullScreen="true"
                 allow="geolocation; microphone; camera"
-                src="https://form.jotform.com/261883116403353"
+                src={jotformSrc(lang)}
                 frameBorder="0"
                 className="jotform-iframe"
                 scrolling="no"
